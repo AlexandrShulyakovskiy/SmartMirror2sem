@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "ledFont";
+    src: url("./ledDisplayFont.ttf");
+    font-family: "GeosansLight";
+    src: url("./GeosansLight.ttf");
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.date-time-wrapper {
+    font-family: "GeosansLight", Verdana, Tahoma;
+    color: white;
+    font-size: 19.5vw;
+    padding: 20px;
+}
+.date-time-wrapper .time {
+    margin: 0;
+    padding: 0;
+}
+.date-time-wrapper .date {
+    font-size: 31%;
+    margin: 0;
+    padding: 0;
+}
+.weather-wrapper {
+    font-family: "GeosansLight", Verdana, Tahoma;
+    margin: 0 30px;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+.weather-title {
+    font-size: 60px;
+    margin: 0;
+}
+.weather-info {
+    margin: 10px 0 0 0;
+    font-size: 40px;
+}
+
+
