@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: "ledFont";
+    src: url("./ledDisplayFont.ttf");
+
+}
+p.mirrorFont {
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+    font-size: 200%;
+    margin: 5px 50px 5px;
+
+
+}
+p.time {
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+    font-size: 300%;
+    margin: 5px 50px 5px;
+}
+
+h3.news {
+
+
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+}
+
+
+
+
