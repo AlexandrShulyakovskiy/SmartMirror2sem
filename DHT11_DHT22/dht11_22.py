@@ -1,3 +1,4 @@
+
 import time
 import Adafruit_DHT as dht
 
@@ -9,13 +10,10 @@ pin2 = 4
 while True:
     humidity, temperature = dht.read_retry(sensor1, pin1)
     if (humidity is not None) and (temperature is not None):
-        temperature = str(temperature)
-        humidity = str(humidity)
-        print("============================DHT22=========================")
-        print("Температура " + temperature + "C  " + "Вологість " + humidity +"%")
-        humidity, temperature = dht.read_retry(sensor2, pin2)
-        temperature = str(temperature)
-        humidity = str(humidity)
-        print("============================DHT11=========================")
-        print("Температура " + temperature + "2C  " + "Вологість " + humidity +"2%")
+        print("=========DHT22========")
+        print("{0:8.2f}C   {1:8.2f}%" .format(temperature,humidity))
+    humidity, temperature = dht.read_retry(sensor2, pin2)
+    if (humidity is not None) and (temperature is not None):
+        print("=========DHT11========")
+        print("{0:8.2f}C   {1:8.2f}%" .format(temperature,humidity))
         time.sleep(2)
