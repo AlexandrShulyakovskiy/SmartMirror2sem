@@ -1,0 +1,31 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Quattrocento', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Bubbler One', sans-serif;
+    font-family: 'Sarabun', sans-serif;
+    padding-left: 25px;
+    color: white;
+}
+
+.date-time-wrapper {
+    font-size: 19.5vw;
+    padding: 20px;
+}
+.date-time-wrapper .time {
+    margin: 0;
+    font-size: 78%;
+    
+}
+.date-time-wrapper .date {
+    font-size: 24%;
+    margin: 0;    
+}
+
+/*.weather-title {
+    margin: 0;
+    padding-left: 35px;
+    font-size: 95px;
+}*/

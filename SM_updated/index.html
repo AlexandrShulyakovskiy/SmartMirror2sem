@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<title> Smart Mirror </title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant|Bubbler+One|Lato:300|Quattrocento|Quicksand:300|Rajdhani:300|Sarabun:200" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body style="background-color:black">
+	<div class="content" style="text-align: left">
+		<div class="date-time-wrapper">
+      <p id="date" class="date"></p>
+			<p id="clock" class="time"></p>
+		</div>
+		<!--<div class="icon cloudy">
+  			<div class="cloud" ></div>
+  			<div class="cloud"></div>
+		</div>-->
+        <!--<div class="weather-wrapper" style="text-align:left"> 
+			<div>
+				<span class="weather-title" id="weather-current" style="color:white"></span>
+				<canvas id="a" width="64" height="64"></canvas>
+				<p class= "weather-info" id="weather-low" style="color:white"></p>
+					<p class= "weather-info" id="weather-high" style="color:white"></p>-->
+			</div>
+		</div>
+		<a class="weatherwidget-io" href="https://forecast7.com/en/49d8424d03/lviv/" data-label_1="LVIV,UKRAINE" data-label_2="WEATHER "data-font="Verdana" data-theme="original" data-basecolor="#000"></a>
+		
+       <script>
+       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+       </script>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+    <div class="rates1" style="font-size: 19px; padding-left: 25px">EUR <span style="font-size: 19px; text-align: right;" id="eur_to_uah"></span>
+    <p class="rates">USD <span style="font-size: 19px; text-align: right;" id="usd_to_uah"></span></p>
+    </div> 
+	</div>
+	<script src="weather.js"></script>
+	<script src="dateTime.js"></script>
+	<script src="rates.js"></script>
+</body>
+</main>
